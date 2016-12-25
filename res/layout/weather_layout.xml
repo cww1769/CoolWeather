@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"        
+        android:background="#99CCCC"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/city_name"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:singleLine="true" 
+            android:text="上海"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#99CCCC">
+		<TextView
+            android:id="@+id/current_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="12-10" />
+        <DigitalClock
+            android:id="@+id/digit_Clock"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>            "
+        <Button
+            android:id="@+id/add_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/plus" />
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/refresh" />                   
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#484E61">
+        <TextView
+            android:id="@+id/current_weather"
+             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/current_temp"
+             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/publish_time"
+             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+    </LinearLayout> 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#484E61">
+   <ListView
+       android:id="@+id/list_view"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent">
+   </ListView>
+    </FrameLayout> 
+</LinearLayout>
